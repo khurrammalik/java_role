@@ -1,5 +1,7 @@
 ---
-
+- debug:
+    msg: "{{ java_implementation }}"
+    
 - name: Java | Install OpenJDK implementation
   import_tasks: install_openjdk.yml
   when: java_implementation == 'openjdk'
